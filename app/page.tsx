@@ -51,7 +51,7 @@ export default function Home() {
             opportunities to be part of your visions.
           </p>
           <Button size="lg" asChild>
-            <a href="mailto:vinyasvasanthegde7@gmail.com">Send me a message</a>
+            <a href="mailto:vinyashegdee@gmail.com">Send me a message</a>
           </Button>
         </section>
       </main>
