@@ -1,39 +1,19 @@
 "use client"
 
-import * as React from "react"
-import Link from "next/link"
-import { cn } from "@/lib/utils"
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
+import { MobileNav } from "./mobile-nav"
+import { DesktopNav } from "./desktop-nav"
 import { motion } from "framer-motion"
-
-const sections = [
-  { title: "About", href: "#about" },
-  { title: "Projects", href: "#projects" },
-  { title: "Contact", href: "#contact" },
-]
 
 export function Navigation() {
   return (
-    <NavigationMenu>
-      <NavigationMenuList>
-        {sections.map((section) => (
-          <NavigationMenuItem key={section.title}>
-            <Link href={section.href} legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                {section.title}
-              </NavigationMenuLink>
-            </Link>
-          </NavigationMenuItem>
-        ))}
-      </NavigationMenuList>
-    </NavigationMenu>
+    <motion.div
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3 }}
+      className="flex items-center flex-1"
+    >
+      <MobileNav />
+      <DesktopNav />
+    </motion.div>
   )
 }
