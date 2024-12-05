@@ -21,14 +21,13 @@ export default function Home() {
         <section id="about" className="space-y-8">
           <div className="space-y-4">
             <h1 className="text-4xl font-bold tracking-tight lg:text-5xl xl:text-6xl">
-              John Doe
+              Vinyas Hegde
             </h1>
             <h2 className="text-2xl text-muted-foreground">
               Software Developer
             </h2>
             <p className="max-w-[700px] text-lg text-muted-foreground">
-              I build exceptional digital experiences that combine elegant design with
-              robust functionality. Specialized in web applications, games, and mobile development.
+            "I do a little bit of everything – from web apps to games to mobile development."
             </p>
           </div>
           <SocialLinks />
@@ -41,7 +40,7 @@ export default function Home() {
         </section>
 
         <section id="projects" className="space-y-8">
-          <h2 className="text-3xl font-bold tracking-tight lg:text-4xl">Projects</h2>
+          <h2 className="text-3xl font-bold tracking-tight lg:text-4xl">My Projects</h2>
           <ProjectsGrid />
         </section>
 
@@ -52,7 +51,7 @@ export default function Home() {
             opportunities to be part of your visions.
           </p>
           <Button size="lg" asChild>
-            <a href="mailto:contact@example.com">Send me a message</a>
+            <a href="mailto:vinyasvasanthegde7@gmail.com">Send me a message</a>
           </Button>
         </section>
       </main>
